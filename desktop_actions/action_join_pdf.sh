@@ -1,4 +1,7 @@
 #!/bin/bash
+##
+## Combina os PDFs selecionados em um documento único. Útil para condensar relatórios.
+##
 
 ## Tratamento do caminho e nome do arquivo
 fullpath=$1					# Caminho completo sem aspas, encaminhadas pelo Thunar

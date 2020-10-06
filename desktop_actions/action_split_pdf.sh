@@ -1,5 +1,7 @@
-
 #!/bin/bash
+##
+## Separa as páginas dos PDFs selecionados em arquivos distintos. Útil para fazer colagem de documentos com arquivos PDF.
+##
 
 while (( "$#" )); do
 	## Tratamento do caminho e nome do arquivo
