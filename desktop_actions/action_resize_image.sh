@@ -1,4 +1,8 @@
 #!/bin/bash
+##
+## Redimensiona suas imagens (em %). Útil para redimensionar várias imagens de uma vez, sem a necessidade de um editor de imagens.
+##
+
 PERCENT=`zenity --scale --text "Informe a porcentagem do novo arquivo" --min-value=2 --max-value=100 --value=50 --step 2`
 
 while (( "$#" )); do  

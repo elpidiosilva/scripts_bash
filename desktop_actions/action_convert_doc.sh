@@ -1,5 +1,8 @@
-
 #!/bin/bash
+##
+## Converte o documento diretamente para o formato informado. Útil para converter vários documentos entre formatos (DOC, XLS, PPT, ODT, ODS, ODP, PDF) de uma vez, sem a necessidade de abrir e salvar como o documento, no LibreOffice.
+##
+
 DST_FORMAT=$(zenity  --list  --width 420 --height 340 --text "Converter documento para ..." --radiolist  --column " " --column "Formato" --column "Descrição" TRUE "pdf"	"(Leitura Multiplataforma)" FALSE "odt"	"(Texto LibreOffice)" FALSE "ods" "(Planilha LibreOffice)" FALSE "odp" "(Apresentação LibreOffice)" FALSE "doc" "(Texto Microsoft Office)" FALSE "docx" "(Texto Microsoft Office 2003+)" FALSE "xls" "(Planilha Microsoft Office)"  FALSE "xlsx" "(Planilha Microsoft Office 2003+)"  FALSE "ppt" "(Apresentação Microsoft Office)"  FALSE "pptx" "(Apresentação Microsoft Office 2003+)")
 zenity --warning --text "Feche todas as janelas e documentos do LibreOffice antes de continuar.\n\n\nAVISO: Não é possível converter entre tipos de documento distintos\n(Ex: Planilha -> Apresentação)"
 killall -9 soffice.bin
