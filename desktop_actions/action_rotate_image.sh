@@ -1,6 +1,8 @@
-## Linha de comando: /usr/local/bin/action_rotate_image.sh %F
-
 #!/bin/bash
+##
+## Rotaciona suas imagens em passos de 90°. Útil para rotacionar várias imagens de uma vez, sem a necessidade de um editor de imagens.
+##
+
 OPCAO=$(zenity  --list  --text "Rotacionar..." --radiolist  --column " " --column "Opção" TRUE "Direita 90" FALSE 'Esquerda 90' FALSE "Direita 180" FALSE 'Esquerda 180')
 
 case "$OPCAO" in
